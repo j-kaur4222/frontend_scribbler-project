@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../styles/header.css">
+        <link rel="stylesheet" href="../styles/post.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+        <link href='https://fonts.googleapis.com/css?family=Marck+Script|Satisfy' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- header -->
+        <div class="header">
+           <button class="headerBtns" id="signUp">Sign Up</button>
+           <button class="headerBtns" id="signIn">Sign In</button>
+           <a id="title" class="logo">ScriBBler</a>
+           <p class="text">Explore, Imagine, Create</p>
+       </div>
+   
+       <!-- Sign Up Modal -->
+       <div class="modal" id="signUpModal">
+           <div class="modal-content">
+   
+               <span id="signUpClose" class="closeBtn">&times;</span>
+   
+               <h1>Get Started</h1>
+               <hr>
+               <form>
+                   <div class="inner-content">
+                       <label><b>Full Name</b></label>
+                       <input type="text" placeholder="Enter Full Name" required>
+   
+                       <label><b>Username</b></label>
+                       <input type="text" placeholder="Enter Username" required>
+   
+                       <label><b>Password</b></label>
+                       <input type="password" placeholder="Enter Password" required>
+   
+                       <label><b>Confirm Password</b></label>
+                       <input type="password" placeholder="Confirm Password" required>
+   
+                       <button type="submit" class="signUpBtn">Sign Up</button>
+                   </div>
+               </form>
+           </div>
+       </div>
+   
+       <!-- Sign In Modal -->
+       <div class="modal" id="signInModal">
+           <div class="modal-content">
+   
+               <span id="signInClose" class="closeBtn">&times;</span>
+   
+               <h1 class="signInA">Welcome Back!</h1>
+               <hr>
+               <form>
+                   <div class="inner-content">
+                       <label><b>Username</b></label>
+                       <input type="text" placeholder="Enter Username" required>
+   
+                       <label><b>Password</b></label>
+                       <input type="password" placeholder="Enter Password" required>
+   
+                       <button type="submit" class="signInBtn">Sign In</button>
+                       <p class="X">Not a member? <span class="signUpC" onclick="signUp()">Sign Up</span></p>
+                   </div>
+               </form>
+           </div>
+       </div>
+
+       <div class="pContainer">
+        <p id="pHeading">Makeup Hacks That Will Change Every Girl’s Life </p>
+       
+        <input type="text" id="editing">
+        <div class="nameEdit">
+            <p id="name">Turn Eyeliner Pencil Into Gel</p>
+            <button id="edit" onclick="edit_Post()">Edit <img src="https://img.icons8.com/metro/15/ffffff/edit-property.png"/></button>
+            <button id="save" onclick="save_Post()">Save <img src="https://img.icons8.com/ios-filled/15/ffffff/save--v1.png"/></button>
+        </div>
+        <p id="post">This will make eyeliner easier to apply because it makes it softer. Simply place 
+            the tip of the eyeliner pencil over a flame for one second. Wait about 15 seconds for it to cool down,
+             and apply.</p>
+      
+        <textarea id="postedit"></textarea>
+
+        <button id="like" onclick="like_post()"><img src="https://img.icons8.com/fluent-systems-filled/20/ffffff/facebook-like.png"/>Like</button>
+
+        <p id="likes">Be first one to like this!</p>
+
+        <textarea id="comments" placeholder="Leave a comment..."></textarea><br>
+
+        <button id="commentButton" onclick="pComment()">Comment</button>
+
+        <h3 id="comment_Heading">All Comments</h3>
+
+        <div id="allComment">
+    
+        </div>
+    </div>
+
+    <!-- JavaScript Post file -->
+    <script src="../scripts/post.js"></script>
+
+    <!--Header File -->
+    <script src="../scripts/header.js"></script>
+
+
+    </body>
+</html>
+
+<!--by jasleen kaur-->

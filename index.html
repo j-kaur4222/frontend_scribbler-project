@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- TODO: Include Font Awesome file here -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- TODO: Include Google Fonts file here -->
+    <link href='https://fonts.googleapis.com/css?family=Marck+Script|Satisfy' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+
+    <!-- css file for index-->
+    <link rel="stylesheet"type="text/css" href="styles/index.css">
+
+    <!-- css file for header-->
+    <link rel="stylesheet" type="text/css" href="styles/header.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <div class="header">
+        <button class="headerBtns" id="signUp">Sign Up</button>
+        <button class="headerBtns" id="signIn">Sign In</button>
+        <a id="title" class="logo">ScriBBler</a>
+        <p class="text">Explore, Imagine, Create</p>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div class="modal" id="signUpModal">
+        <div class="modal-content">
+
+            <span id="signUpClose" class="closeBtn">&times;</span>
+
+            <h1>Get Started</h1>
+            <hr>
+            <form>
+                <div class="inner-content">
+                    <label><b>Full Name</b></label>
+                    <input type="text" placeholder="Enter Full Name" required>
+
+                    <label><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" required>
+
+                    <label><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" required>
+
+                    <label><b>Confirm Password</b></label>
+                    <input type="password" placeholder="Confirm Password" required>
+
+                    <button type="submit" class="signUpBtn">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sign In Modal -->
+    <div class="modal" id="signInModal">
+        <div class="modal-content">
+
+            <span id="signInClose" class="closeBtn">&times;</span>
+
+            <h1 class="signInA">Welcome Back!</h1>
+            <hr>
+            <form>
+                <div class="inner-content">
+                    <label><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" required>
+
+                    <label><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" required>
+
+                    <button type="submit" class="signInBtn">Sign In</button>
+                    <p class="X">Not a member? <span class="signUpC" onclick="signUp()">Sign Up</span></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- centre buttons -->
+    <div class="postButtons">
+        <button class="postBtns" onclick="window.location.href='./html/bloglist.html'">All Posts</button>
+        <button class="postBtns" id="createBtn" onclick="hello()">Create Post</button>
+    </div>
+
+    <!-- Create Post Modal -->
+    <div class="modal" id="createPostModal">
+        <div class="createPostModalContent">
+
+            <span id="createModalSpan" class="PostClose">&times;</span>
+
+            <h1 class="createPostB">Pen Your Post</h1>
+                <form class="form-container">
+                    <label><b>Title:</b></label>
+                    <input type="text" style="width:50%;">
+    
+                    <label><b>Content:</b></label>
+                    <textarea></textarea>
+
+                    <div style="text-align:center;">
+                        <button type="submit" class="submitD">Create</button>
+                    </div>
+                </form>
+        </div>
+    </div>
+
+    <!-- js file for index -->
+    <script src="scripts/index.js"></script>
+
+    <!-- js file for header -->
+    <script src="scripts/header.js" ></script>
+</body>
+
+</html>
